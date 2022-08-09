@@ -4,10 +4,137 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Tables and Forms</title>
+    <link href="./index.css" rel="stylesheet">
   </head>
   <body>
     <main>
       <!-- Complete the Exercises HERE -->
+      <table class="table1" border="1" border-style="solid" id="table1">
+        <tr>
+          <td></td>
+          <th>Total Servings</th>
+          <th>Serving Size</th>
+          <th>Calories per Serving</th>
+          <th>Carbs per Serving</th>
+          <th>Sugars per Serving</th>
+          <th>Sodium per Serving</th>
+        </tr>
+        <tr>
+          <td><strong>Coca Cola</strong></td>
+          <td>1</td>
+          <td>12oz</td>
+          <td>140</td>
+          <td>39g</td>
+          <td>39g</td>
+          <td>45mg</td>
+        </tr>
+        <tr>
+          <td><strong>Pepsi</strong></td>
+          <td>1</td>
+          <td>12oz</td>
+          <td>150</td>
+          <td>41g</td>
+          <td>41g</td>
+          <td>30mg</td>
+        </tr>
+        <tr>
+          <td><strong>Coca Cola Zero</strong></td>
+          <td>1</td>
+          <td>12oz</td>
+          <td>0g</td>
+          <td>0g</td>
+          <td>0g</td>
+          <td>40mg</td>
+        </tr>
+        <tr>
+          <td><strong>Dr. Pepper</strong></td>
+          <td>1</td>
+          <td>12oz</td>
+          <td>150</td>
+          <td>27g</td>
+          <td>27g</td>
+          <td>35mg</td>
+        </tr>
+        <tr>
+          <td><strong>Mountain Dew</strong></td>
+          <td>1</td>
+          <td>12oz</td>
+          <td>170</td>
+          <td>46g</td>
+          <td>46g</td>
+          <td>65mg</td>
+        </tr>
+      </table>
+
+      <br>
+      <br>
+      <br>
+      <!--------I know this isn't best practice, but it works. lol-->
+      <br>
+      <br>
+      <form>
+          <table>
+            <tr>
+              <td><label for="name"> Name: </label></td>
+              <td>
+                <input id="name"; 
+                    type="text";
+                    required />
+              </td>
+            </tr>
+              <tr>
+                  <td><label for="totalServings"> Total Servings: </label></td>
+                  <td>
+                    <input id="totalServings"; 
+                        type="number";
+                        required />
+                  </td>
+                </tr>
+                <tr>
+                    <td><label for="servingSize"> Serving Size: </label></td>
+                    <td><input id="servingSize"; 
+                        type="text";
+                        required />
+                      </td>
+                  </tr>
+                  <tr>
+                    <td><label for="calories"> Calories per Serving: </label></td>
+                    <td>
+                      <input id="calories"; 
+                        type="number";
+                        required/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="carbs"> Carbs per Serving: </label></td>
+                    <td>
+                      <input id="carbs"; 
+                        type="text";
+                        required;/>
+                    </td>
+                  </tr>
+                  <tr>
+                      <td><label for="sugars"> Sugars per Serving: </label></td>
+                      <td>
+                        <input id="sugars"; 
+                            type="text";
+                           required/>
+                      </td>
+                  <tr>
+                    <td><label for="sodium"> Carbs per Serving: </label></td>
+                    <td>
+                      <input id="sodium"; 
+                        type="text";
+                        required/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" align="center">
+                      <input type="submit" Submit />
+                    </td>
+                  </tr>
+        </table>
+      </form>
     </main>
   </body>
 </html>
